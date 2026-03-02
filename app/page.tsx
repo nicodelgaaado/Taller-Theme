@@ -4,31 +4,31 @@ export default function Home() {
   const accentColors = ["#E68170", "#F0DA67", "#86DB83", "#5449DA", "#CE76CE"];
 
   return (
-    <div className="min-h-screen bg-[#f2f2f5] px-4 py-8 sm:py-14">
-      <main className="mx-auto w-full max-w-[890px] rounded-[30px] border border-[#e6e6eb] bg-[#fcfcfd] px-5 py-7 shadow-[0_24px_45px_rgba(33,33,52,0.1),0_2px_6px_rgba(25,25,40,0.05)] sm:px-10 sm:py-10">
-        <section className="border-b border-[#ededf0] pb-6">
-          <h1 className="text-[clamp(2.05rem,5vw,3.1rem)] font-semibold tracking-[-0.03em] text-[#202028]">
+    <div className="min-h-screen bg-[#f2f2f5] px-4 py-6 sm:py-10 lg:py-5">
+      <main className="mx-auto w-full max-w-[860px] rounded-[30px] border border-[#e6e6eb] bg-[#fcfcfd] px-5 py-6 shadow-[0_24px_45px_rgba(33,33,52,0.1),0_2px_6px_rgba(25,25,40,0.05)] sm:px-8 sm:py-8 lg:max-w-[760px] lg:px-8 lg:py-7">
+        <section className="border-b border-[#ededf0] pb-5 lg:pb-4">
+          <h1 className="text-[32px] font-semibold tracking-[-0.03em] text-[#202028] sm:text-[40px] lg:text-[34px]">
             Appearance
           </h1>
-          <p className="mt-1 text-[clamp(1.05rem,2.6vw,1.95rem)] text-[#8d8d96]">
+          <p className="mt-1 text-[17px] text-[#8d8d96] sm:text-[25px] lg:text-[20px]">
             Set or customize your preferences for the system
           </p>
         </section>
 
-        <section className="border-b border-[#ededf0] py-5 sm:py-6">
+        <section className="border-b border-[#ededf0] py-4 sm:py-5 lg:py-4">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <h2 className="text-[clamp(1.65rem,4.2vw,2.85rem)] font-semibold text-[#25252e]">
+              <h2 className="text-[27px] font-semibold text-[#25252e] sm:text-[36px] lg:text-[30px]">
                 Language
               </h2>
-              <p className="mt-1 text-[clamp(1.05rem,2.5vw,1.9rem)] text-[#8d8d96]">
+              <p className="mt-1 text-[17px] text-[#8d8d96] sm:text-[24px] lg:text-[19px]">
                 Select the language of the platform
               </p>
             </div>
-            <button className="flex h-[58px] w-full items-center justify-between rounded-[16px] border border-[#dadbe0] bg-white px-6 text-[clamp(1.05rem,2.5vw,2rem)] text-[#45454d] shadow-[0_2px_6px_rgba(16,16,24,0.05)] sm:w-[285px]">
+            <button className="flex h-[54px] w-full items-center justify-between rounded-[16px] border border-[#dadbe0] bg-white px-5 text-[18px] text-[#45454d] shadow-[0_2px_6px_rgba(16,16,24,0.05)] sm:h-[58px] sm:w-[285px] sm:text-[23px] lg:h-[52px] lg:text-[20px]">
               English
               <svg
-                className="h-6 w-6 text-[#686871]"
+                className="h-5 w-5 text-[#686871] sm:h-6 sm:w-6 lg:h-5 lg:w-5"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,36 +46,36 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b border-[#ededf0] py-6">
-          <h2 className="text-[clamp(1.65rem,4.2vw,2.85rem)] font-semibold text-[#25252e]">
+        <section className="border-b border-[#ededf0] py-5 sm:py-6 lg:py-4">
+          <h2 className="text-[27px] font-semibold text-[#25252e] sm:text-[36px] lg:text-[30px]">
             Interface theme
           </h2>
-          <p className="mt-1 text-[clamp(1.05rem,2.5vw,1.9rem)] text-[#8d8d96]">
+          <p className="mt-1 text-[17px] text-[#8d8d96] sm:text-[24px] lg:text-[19px]">
             Customize your application appereance
           </p>
 
-          <div className="mt-5 grid gap-4 sm:mt-6 sm:grid-cols-3 sm:gap-5">
+          <div className="mt-4 grid gap-4 sm:mt-5 sm:grid-cols-3 sm:gap-4 lg:gap-3">
             <ThemeCard label="Auto" type="auto" />
             <ThemeCard label="Light" type="light" active />
             <ThemeCard label="Dark" type="dark" />
           </div>
         </section>
 
-        <section className="border-b border-[#ededf0] py-5 sm:py-6">
+        <section className="border-b border-[#ededf0] py-4 sm:py-5 lg:py-4">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <h2 className="text-[clamp(1.65rem,4.2vw,2.85rem)] font-semibold text-[#25252e]">
+              <h2 className="text-[27px] font-semibold text-[#25252e] sm:text-[36px] lg:text-[30px]">
                 Accent color
               </h2>
-              <p className="mt-1 text-[clamp(1.05rem,2.5vw,1.9rem)] text-[#8d8d96]">
+              <p className="mt-1 text-[17px] text-[#8d8d96] sm:text-[24px] lg:text-[19px]">
                 Pick your platform&apos;s main color
               </p>
             </div>
-            <div className="flex items-center gap-4 self-end sm:self-auto">
+            <div className="flex items-center gap-3 self-end sm:self-auto">
               {accentColors.map((color) => (
                 <span
                   key={color}
-                  className="h-12 w-12 rounded-full border border-white/60 shadow-[0_3px_8px_rgba(37,37,53,0.14)]"
+                  className="h-9 w-9 rounded-full border border-white/60 shadow-[0_3px_8px_rgba(37,37,53,0.14)] sm:h-11 sm:w-11 lg:h-10 lg:w-10"
                   style={{ backgroundColor: color }}
                 />
               ))}
@@ -89,15 +89,15 @@ export default function Home() {
           <SettingRow icon={<PhotoIcon />} label="High quality photo" on={false} />
         </section>
 
-        <section className="mt-5 flex flex-col gap-4 sm:mt-7 sm:flex-row sm:items-center sm:justify-between">
-          <span className="text-[clamp(1.5rem,3vw,2.15rem)] font-medium text-[#8a8a93]">
+        <section className="mt-4 flex flex-col gap-3 sm:mt-5 sm:flex-row sm:items-center sm:justify-between lg:mt-4">
+          <span className="text-[24px] font-medium text-[#8a8a93] sm:text-[31px] lg:text-[25px]">
             Reset to default
           </span>
           <div className="flex w-full gap-3 sm:w-auto sm:gap-4">
-            <button className="h-[62px] flex-1 rounded-[18px] border border-[#dedee4] bg-[#fafafb] px-4 text-[clamp(1.25rem,2.8vw,2rem)] font-medium text-[#34343d] shadow-[0_1px_4px_rgba(30,30,44,0.08)] sm:min-w-[170px] sm:flex-none">
+            <button className="h-[54px] flex-1 rounded-[16px] border border-[#dedee4] bg-[#fafafb] px-4 text-[20px] font-medium text-[#34343d] shadow-[0_1px_4px_rgba(30,30,44,0.08)] sm:h-[60px] sm:min-w-[170px] sm:flex-none sm:text-[28px] lg:h-[54px] lg:text-[22px]">
               Cancel
             </button>
-            <button className="h-[62px] flex-1 rounded-[18px] border border-[#4a3fdf] bg-[linear-gradient(180deg,#5E4BEE_0%,#4334D6_100%)] px-5 text-[clamp(1.1rem,2.65vw,2rem)] font-semibold text-white shadow-[0_10px_18px_rgba(75,62,223,0.35),inset_0_1px_0_rgba(255,255,255,0.26)] sm:min-w-[320px] sm:flex-none">
+            <button className="h-[54px] flex-1 rounded-[16px] border border-[#4a3fdf] bg-[linear-gradient(180deg,#5E4BEE_0%,#4334D6_100%)] px-4 text-[17px] font-semibold text-white shadow-[0_10px_18px_rgba(75,62,223,0.35),inset_0_1px_0_rgba(255,255,255,0.26)] sm:h-[60px] sm:min-w-[290px] sm:flex-none sm:text-[26px] lg:h-[54px] lg:min-w-[260px] lg:text-[21px]">
               Save Preferences
             </button>
           </div>
@@ -119,7 +119,7 @@ function ThemeCard({
   return (
     <button className="group flex w-full flex-col items-center gap-3">
       <div
-        className={`relative h-[130px] w-full rounded-[18px] border bg-white p-3 shadow-[0_7px_14px_rgba(36,36,51,0.1)] transition-all sm:h-[145px] ${
+        className={`relative h-[116px] w-full rounded-[16px] border bg-white p-2.5 shadow-[0_7px_14px_rgba(36,36,51,0.1)] transition-all sm:h-[132px] sm:p-3 lg:h-[112px] ${
           active
             ? "border-[3px] border-[#7365e8]"
             : "border-[#ececf1] group-hover:border-[#d8d8e4]"
@@ -127,18 +127,18 @@ function ThemeCard({
       >
         {type === "auto" && (
           <>
-            <div className="absolute inset-y-0 left-0 w-[48%] rounded-l-[14px] bg-[#9d92ef]/45" />
-            <div className="absolute inset-y-0 right-0 w-[52%] rounded-r-[14px] bg-[#f6f6fa]" />
+            <div className="absolute inset-y-0 left-0 w-[48%] rounded-l-[12px] bg-[#9d92ef]/45" />
+            <div className="absolute inset-y-0 right-0 w-[52%] rounded-r-[12px] bg-[#f6f6fa]" />
           </>
         )}
         {type === "light" && (
-          <div className="absolute inset-0 rounded-[14px] bg-[#fefefe]" />
+          <div className="absolute inset-0 rounded-[12px] bg-[#fefefe]" />
         )}
         {type === "dark" && (
-          <div className="absolute inset-0 rounded-[14px] bg-[linear-gradient(160deg,#2f2bd6_0%,#5a52ce_70%,#746dd2_100%)]" />
+          <div className="absolute inset-0 rounded-[12px] bg-[linear-gradient(160deg,#2f2bd6_0%,#5a52ce_70%,#746dd2_100%)]" />
         )}
 
-        <div className="relative z-10 flex h-full flex-col gap-2 rounded-[10px] border border-white/20 bg-white/55 px-3 py-3 backdrop-blur-[1px]">
+        <div className="relative z-10 flex h-full flex-col gap-1.5 rounded-[9px] border border-white/20 bg-white/55 px-2.5 py-2.5 backdrop-blur-[1px] sm:gap-2 sm:px-3 sm:py-3 lg:gap-1.5">
           <span className="h-1.5 w-2/3 rounded-full bg-black/20" />
           <span className="h-1.5 w-4/5 rounded-full bg-black/12" />
           <span className="mt-1 h-1.5 w-2/5 rounded-full bg-black/16" />
@@ -167,7 +167,7 @@ function ThemeCard({
         )}
       </div>
       <span
-        className={`text-[clamp(1.25rem,2.8vw,2.1rem)] font-medium ${
+        className={`text-[22px] font-medium sm:text-[31px] lg:text-[24px] ${
           active ? "text-[#5c4fe4]" : "text-[#44444d]"
         }`}
       >
@@ -187,10 +187,10 @@ function SettingRow({
   on: boolean;
 }) {
   return (
-    <div className="flex items-center justify-between border-b border-[#ededf0] py-5">
-      <div className="flex items-center gap-3">
+    <div className="flex items-center justify-between border-b border-[#ededf0] py-3.5 sm:py-4 lg:py-3">
+      <div className="flex items-center gap-2.5 sm:gap-3">
         <span className="text-[#9898a0]">{icon}</span>
-        <span className="text-[clamp(1.45rem,3.4vw,2.75rem)] font-semibold text-[#2a2a32]">
+        <span className="text-[24px] font-semibold text-[#2a2a32] sm:text-[35px] lg:text-[28px]">
           {label}
         </span>
       </div>
@@ -202,14 +202,14 @@ function SettingRow({
 function ToggleSwitch({ on }: { on: boolean }) {
   return (
     <span
-      className={`relative h-[44px] w-[80px] rounded-full p-1 transition-colors ${
+      className={`relative h-[34px] w-[62px] rounded-full p-1 transition-colors sm:h-[42px] sm:w-[76px] lg:h-[36px] lg:w-[66px] ${
         on ? "bg-[#5748e7]" : "bg-[#dad5f0]"
       }`}
       role="presentation"
     >
       <span
-        className={`absolute top-1 h-[36px] w-[36px] rounded-full bg-white shadow-[0_2px_8px_rgba(32,29,76,0.24)] transition-all ${
-          on ? "left-[40px]" : "left-1"
+        className={`absolute top-1 h-[26px] w-[26px] rounded-full bg-white shadow-[0_2px_8px_rgba(32,29,76,0.24)] transition-all sm:h-[34px] sm:w-[34px] lg:h-[28px] lg:w-[28px] ${
+          on ? "left-[32px] sm:left-[38px] lg:left-[34px]" : "left-1"
         }`}
       />
     </span>
@@ -219,7 +219,7 @@ function ToggleSwitch({ on }: { on: boolean }) {
 function SparkIcon() {
   return (
     <svg
-      className="h-7 w-7"
+      className="h-5 w-5 sm:h-7 sm:w-7 lg:h-6 lg:w-6"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@ function SparkIcon() {
 function PlayIcon() {
   return (
     <svg
-      className="h-7 w-7"
+      className="h-5 w-5 sm:h-7 sm:w-7 lg:h-6 lg:w-6"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +256,7 @@ function PlayIcon() {
 function PhotoIcon() {
   return (
     <svg
-      className="h-7 w-7"
+      className="h-5 w-5 sm:h-7 sm:w-7 lg:h-6 lg:w-6"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
